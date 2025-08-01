@@ -1,0 +1,112 @@
+.form-input-wrapper .form-group {
+    flex-basis:48%;
+}
+
+.form-input-wrapper .form-group:nth-child(2n+2) {
+    margin-left:4%;
+}
+
+.form-input-wrapper {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.help-block.with-errors li{
+    color:#e23838;
+}
+
+.form-group.form-insurance-wrap .label-control, .form-group.form-contact-wrap .label-control {
+    top: 0.125rem;
+    opacity: 1;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.home-intro-wrapper {
+    text-align:center;
+}
+
+.intro-icon-wrapper {
+    display:flex;
+    margin-top:60px
+}
+
+.intro-icon-wrapper .icon-inner:nth-child(2) {
+    margin:0 5%;
+}
+
+.intro-icon-wrapper .icon-inner img {
+    margin-bottom:20px;
+    max-height:70px;
+    height:100%;
+}
+
+.into-main-text h2{
+    width:60%;
+    margin-left:20%;
+    font-size:38px
+}
+
+.sub-h2 {
+    font-weight:600;
+}
+
+.sub-h2-green {
+    color:#99D429
+}
+
+.row-aligned {
+     align-items: center;
+    align-content: center;   
+}
+
+/*----------------MEDIA QUERIES----------------*/
+
+@media (max-width:767px) {
+    #newsletterForm .form-input-wrapper .form-group {
+        flex-basis:100%;
+        margin-left:0;
+        margin-top:10px;
+    }
+    #newsletterForm .form-input-wrapper .form-group:nth-child(1) {
+        margin-top:0;
+    }
+}
+
+@media (max-width:1230px) {
+    .into-main-text h2{
+        width:80%;
+        margin-left:10%;
+    }    
+}
+
+@media (max-width:991px) {
+    .into-main-text h2{
+        width:100%;
+        margin-left:0;
+        font-size:38px
+    }
+    .intro-icon-wrapper {
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .intro-icon-wrapper .icon-inner {
+        flex-basis:80%;
+        margin-top:40px
+    }
+    .intro-icon-wrapper .icon-inner:nth-child(2) {
+        margin:40px 0 0 0;
+    }
+    .intro-icon-wrapper .icon-inner:nth-child(1) {
+        margin-top:0;
+    }    
+}
+
+@media (max-width:650px) {
+    .into-main-text h2 {
+        font-size:30px;
+    }
+    .intro-icon-wrapper .icon-inner {
+        flex-basis:100%;
+    }
+}
